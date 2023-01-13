@@ -2,11 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato";
-  background-color: #d777aa;
+  background-image: linear-gradient(135deg, #fff886 10%, #f072b6 100%);
 }
 header {
-  background-image: linear-gradient(135deg, #fff886 10%, #f072b6 100%);
   padding: 20px 0;
+  background-image: linear-gradient(135deg, #fff886 10%, #f072b6 100%);
 }
 .caixa {
   width: 940px;
@@ -84,10 +84,7 @@ footer {
   margin-top: 20px;
   color: #d777aa;
 }
-main {
-  width: 940px;
-  margin: 0 auto;
-}
+
 form {
   margin: 40px 0;
 }
@@ -108,7 +105,7 @@ form legend {
   margin: 20px 0;
 }
 p {
-  color: #8e295f;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -150,33 +147,104 @@ th {
 /* css da pagina inicial */
 .banner {
   width: 100%;
+  margin-bottom: 1em;
 }
-
 .titulo-principal {
   text-align: center;
   font-size: 2em;
   margin: 0 0 1em;
   clear: left;
 }
-
+.principal {
+  margin: 0 0 1em;
+  width: 940px;
+  margin: 0 auto;
+}
 .principal p {
   margin: 0 0 1em;
 }
-
 .principal strong {
   font-weight: bold;
 }
-
 .principal em {
   font-style: italic;
 }
-
+.titulo-principal:before {
+  content: " [ ";
+  font-weight: 100;
+  color: #50002b;
+}
+.titulo-principal:after {
+  content: " ] ";
+  font-weight: 100;
+  color: #50002b;
+}
+.itens:before {
+  content: "★";
+  padding: 1em;
+}
 .utensilios {
   width: 120px;
   float: left;
   margin: 0 20px 20px 0;
 }
-
+.mapa {
+  margin: 0 0 3em 0;
+}
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+.lista-beneficios {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
 .imagembeneficios {
-  width: 60%;
+  opacity: 1;
+  width: 50%;
+  transition: 400ms;
+  box-shadow: 6px 6px 20px 4px #313030;
+}
+.imagembeneficios:hover {
+  opacity: 0.4;
+}
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+.itens {
+  line-height: 1.5;
+}
+.itens:first-child {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-conteudo,
+  .video {
+    width: auto;
+    margin: 0 2em 0 2em;
+  }
+  h1 {
+    text-align: center;
+  }
+  nav {
+    position: static;
+  }
+  .lista-beneficios,
+  .imagembeneficios {
+    width: 100%;
+  }
 }
