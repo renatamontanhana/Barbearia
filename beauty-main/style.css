@@ -1,0 +1,102 @@
+:root {
+  --font: "Comfortaa", cursive;
+  --primary-color: #000000;
+  --secondary-color: linear-gradient(135deg, #eead92 10%, #6018dc 100%);
+  --hover-color: #f3a38a;
+  --branco: #fff;
+}
+
+body {
+  font-family: var(--font);
+}
+
+header {
+  background: var(--secondary-color);
+  padding: 20px 0;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+.servicos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.servicos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid var(--hover-color);
+  border-radius: 10px;
+}
+
+.servicos li:hover {
+  border-color: var(--hover-color);
+}
+
+.servicos li:hover h2 {
+  font-size: 34px;
+}
+
+.servicos h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.servico-descricao {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.servico-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--primary-color);
+}
+
+footer {
+  text-align: center;
+  background: var(--secondary-color);
+  padding: 40px 0;
+}
+
+.copyright {
+  color: var(--primary-color);
+  font-size: 11px;
+  margin: 20px 0 0;
+}
